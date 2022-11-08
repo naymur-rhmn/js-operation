@@ -82,26 +82,17 @@ else {
 */
 
 // Task 5- input a letter and check it is vowel or consonant using switch
-/*
+
 var letter = prompt('Enter a letter : ').toLowerCase();
 console.log(letter);
 switch (letter) {
   case 'a':
-    document.write(letter.toUpperCase() + ' is a Vowel');
-    break;
   case 'e':
-    document.write(letter.toUpperCase() + ' is a Vowel');
-    break;
   case 'i':
-    document.write(letter.toUpperCase() + ' is a Vowel');
-    break;
   case 'o':
-    document.write(letter.toUpperCase() + ' is a Vowel');
-    break;
   case 'u':
     document.write(letter.toUpperCase() + ' is a Vowel');
     break;
   default:
     document.write(letter.toUpperCase() + ' is a Consonant');
 }
-*/
