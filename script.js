@@ -158,11 +158,18 @@ document.write(x);
 
 // IIFEs (Immediately Invokeable Function Expression)
 // IIFE is Immediately Invokeable Function 
-
+/*
 (function adition(num1, num2) {
   var result = num1 + num2;
   document.write(result);
 })(5, 6);
+*/
 
+// function expression
+// function ke variable e store korle take function expression bole
 
-
+var display = function displaymsg(msg) {
+  document.write(msg);
+}
+// display();
+display('Hello world');
