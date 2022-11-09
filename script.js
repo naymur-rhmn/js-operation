@@ -122,7 +122,7 @@ do {
 */
 
 // break & continue
-
+/*
 var evenNum;
 
 for (var i = 1; i <= 50; i++) {
@@ -132,3 +132,12 @@ for (var i = 1; i <= 50; i++) {
   evenNum = i;
   document.write('Even Number : ' + evenNum + '<br/>');
 }
+*/
+
+// ternary operator
+
+var number = Number(prompt('Enter a number : '));
+// var result = number < 0 ? 'Negative' : 'Positive';
+var result = number > 0 ? 'Positive' : number < 0 ? 'Negative' : 'Zero';
+
+document.write(result);
