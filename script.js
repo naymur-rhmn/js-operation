@@ -157,7 +157,7 @@ document.write(x);
 */
 
 // IIFEs (Immediately Invokeable Function Expression)
-// IIFE is Immediately Invokeable Function 
+// IIFE is Immediately Invokeable Function
 /*
 (function adition(num1, num2) {
   var result = num1 + num2;
@@ -167,9 +167,33 @@ document.write(x);
 
 // function expression
 // function ke variable e store korle take function expression bole
-
+/*
 var display = function displaymsg(msg) {
   document.write(msg);
 }
 // display();
 display('Hello world');
+*/
+
+
+// array
+// array er index 0 theke suru hoy
+/*
+// Example 1
+// var names = new Array(5);
+var names = new Array(5);
+names[0] = "Tamim";
+names[1] = "Rasel";
+names[2] = "Tarek";
+names[3] = "Rohim";
+names[4] = "Sohel";
+*/
+// example 2
+var names = ['Tamim', 'Rasel', 'Tarek', 'Rohim', 'Sohel'];
+// add element in array end
+console.log(names.length);
+names.push('Sojib');
+console.log(names.length);
+// remove element from end
+names.pop();
+console.log(names);
