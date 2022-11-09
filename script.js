@@ -113,10 +113,22 @@ document.write(sum + ' ');
 */
 
 // do while loop
+/*
 var i = 0;
 do {
-  document.write('do loop =' + (i = i + 3) + '<br/>')
+  document.write('do loop =' + i + '<br/>')
   i++;
 } while (i <= 10)
+*/
 
 // break & continue
+
+var evenNum;
+
+for (var i = 1; i <= 50; i++) {
+  if (i % 2 != 0) {
+    continue;
+  }
+  evenNum = i;
+  document.write('Even Number : ' + evenNum + '<br/>');
+}
