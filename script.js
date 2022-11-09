@@ -82,7 +82,7 @@ else {
 */
 
 // Task 5- input a letter and check it is vowel or consonant using switch
-
+/*
 var letter = prompt('Enter a letter : ').toLowerCase();
 console.log(letter);
 switch (letter) {
@@ -96,3 +96,27 @@ switch (letter) {
   default:
     document.write(letter.toUpperCase() + ' is a Consonant');
 }
+*/
+
+// Task 6 - write a program  that will print sum of all the numbers  that are divisible by 3 and 5 from 1-100
+/*
+var i = 1;
+var sum = 0;
+
+while (i <= 100) {
+  if (i % 3 == 0 && i % 5 == 0) {
+    sum = sum + i;
+  }
+  i++;
+}
+document.write(sum + ' ');
+*/
+
+// do while loop
+var i = 0;
+do {
+  document.write('do loop =' + (i = i + 3) + '<br/>')
+  i++;
+} while (i <= 10)
+
+// break & continue
