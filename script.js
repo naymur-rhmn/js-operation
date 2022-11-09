@@ -200,3 +200,10 @@ names.pop();
 console.log(names);
 */
 
+// loop in array 
+var num = [10, 12, 14, 16, 18, 20, 22, 24, 26, 28];
+for (i = 0; i < num.length; i++) {
+  var x = num[i];
+  document.write(' ' + x);
+  console.log(x);
+} 
