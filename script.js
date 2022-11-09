@@ -135,9 +135,21 @@ for (var i = 1; i <= 50; i++) {
 */
 
 // ternary operator
-
+/*
 var number = Number(prompt('Enter a number : '));
 // var result = number < 0 ? 'Negative' : 'Positive';
 var result = number > 0 ? 'Positive' : number < 0 ? 'Negative' : 'Zero';
 
 document.write(result);
+*/
+
+// traditional function
+var number = Number(prompt('Enter any number to square : '))
+
+function square(param) {
+  var result = param * param;
+  return result;
+}
+
+var x = square(number);
+document.write(x);
