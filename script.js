@@ -144,6 +144,7 @@ document.write(result);
 */
 
 // traditional function
+/*
 var number = Number(prompt('Enter any number to square : '))
 
 function square(param) {
@@ -153,3 +154,15 @@ function square(param) {
 
 var x = square(number);
 document.write(x);
+*/
+
+// IIFEs (Immediately Invokeable Function Expression)
+// IIFE is Immediately Invokeable Function 
+
+(function adition(num1, num2) {
+  var result = num1 + num2;
+  document.write(result);
+})(5, 6);
+
+
+
