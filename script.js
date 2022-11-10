@@ -200,18 +200,19 @@ names.pop();
 console.log(names);
 */
 
-// loop in array 
+// loop in array
 /*
 var num = [10, 12, 14, 16, 18, 20, 22, 24, 26, 28];
 for (i = 0; i < num.length; i++) {
   var x = num[i];
   document.write(' ' + x);
   console.log(x);
-} 
+}
 */
 
 
 // array methods
+/*
 var names = ['Anis', 'Rohim', 'Korim', 'Badal', 'Rabbi'];
 
 // push method array te last element add kore
@@ -248,13 +249,7 @@ names.sort()
 
 // reverse method alphabet reverse order e element show kore
 names.reverse()
+*/
 
 
-// number sort in an array
-var num = [3, 1, 22, 12, 9, 7, 30, 21]
-num.sort(function (a, b) {
-  // a - b coto theke boro songkha dekhabe, b - a boro theke coto songkha dekhabe (smile)
-  return a - b;
-})
 
-console.log(num);
