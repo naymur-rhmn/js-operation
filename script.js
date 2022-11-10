@@ -262,11 +262,11 @@ console.log(num);
 
 // Task 8 - Create a function called highestScore that will 
 // (1) receive a 1directional array called scores, (2) return the highest score
-
+/*
 var scores = [55, 99, 44, 88, 89, 67, 94, 51];
 
 function highestScore(scores) {
-  var max = 0;
+  let max = 0;
   for (var i = 0; i < scores.length; i++) {
     if (scores[i] > max) {
       max = scores[i];
@@ -275,4 +275,34 @@ function highestScore(scores) {
   return max;
 }
 console.log(highestScore(scores));
+*/
 
+// Task 9 - Create a function called highestRunScorer that will
+// (1) Receive a 2d(directional) array caled playersInfo, (2) Besed don highest score, return the name of the player
+
+let playersInfo = [
+  ['Mushfiq', 499],
+  ['Liton', 459],
+  ['Shakib', 672],
+  ['Mashrafe', 500],
+  ['Taskin', 351],
+  ['Mahmudullah', 444],
+  ['Nasir', 400],
+  ['Tamim', 747]
+]
+
+function highestRunScorer(playersInfo) {
+  let highestScore = playersInfo[0][1];
+  let highestScorer = playersInfo[0][0];
+
+  for (let i = 1; i < playersInfo.length; i++) {
+    if (highestScore < playersInfo[i][1]) {
+      highestScorer = playersInfo[i][0]
+      highestScore = playersInfo[i][1]
+    }
+  }
+  return highestScorer;
+}
+
+const bestPlayer = highestRunScorer(playersInfo);
+console.log(bestPlayer);
