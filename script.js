@@ -249,7 +249,7 @@ names.sort()
 
 // reverse method alphabet reverse order e element show kore
 names.reverse()
-*/
+
 
 // number sort in an array
 var num = [3, 1, 22, 12, 9, 7, 30, 21]
@@ -257,6 +257,22 @@ num.sort(function (a, b) {
   // a - b coto theke boro songkha dekhabe, b - a boro theke coto songkha dekhabe (smile)
   return a - b;
 })
-
 console.log(num);
+*/
+
+// Task 8 - Create a function called highestScore that will 
+// (1) receive a 1directional array called scores, (2) return the highest score
+
+var scores = [55, 99, 44, 88, 89, 67, 94, 51];
+
+function highestScore(scores) {
+  var max = 0;
+  for (var i = 0; i < scores.length; i++) {
+    if (scores[i] > max) {
+      max = scores[i];
+    }
+  }
+  return max;
+}
+console.log(highestScore(scores));
 
