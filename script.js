@@ -251,5 +251,12 @@ names.sort()
 names.reverse()
 */
 
+// number sort in an array
+var num = [3, 1, 22, 12, 9, 7, 30, 21]
+num.sort(function (a, b) {
+  // a - b coto theke boro songkha dekhabe, b - a boro theke coto songkha dekhabe (smile)
+  return a - b;
+})
 
+console.log(num);
 
