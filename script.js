@@ -395,3 +395,22 @@ const querySelectAll = document.querySelectorAll('p')[0];
 console.log(querySelectAll);
 querySelectAll.innerHTML = 'All are beautiful!'
 */
+
+// event handler onclick
+
+let para = document.querySelector('.txt');
+let img = document.querySelector('#img');
+
+function btnAlert() {
+  para.innerHTML = 'Button 1 clicked'
+}
+function btnAlert1() {
+  para.innerHTML = 'Button 2 clicked'
+}
+
+function imgChange() {
+  img.src = './nr.jpg';
+}
+function imgChange1() {
+  img.src = './img2.PNG';
+}
