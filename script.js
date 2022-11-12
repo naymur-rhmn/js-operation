@@ -324,8 +324,13 @@ function Student(name, age, cgpa, lang) {
   this.age = age;
   this.cgpa = cgpa;
   this.lang = lang;
+  this.display = function () {
+    console.log(this.name);
+    console.log(this.age);
+  }
 }
 const student2 = new Student('Fahim', 20, 4.8, ['bangla', 'english'])
 const student3 = new Student('Anam', 22, 5, ['bangla', 'english', 'hindi', 'portuguise'])
 
-console.log(student3); 
+student2.display();
+console.log(student2);
