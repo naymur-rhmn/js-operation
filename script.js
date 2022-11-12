@@ -260,7 +260,7 @@ num.sort(function (a, b) {
 console.log(num);
 */
 
-// Task 8 - Create a function called highestScore that will 
+// Task 8 - Create a function called highestScore that will
 // (1) receive a 1directional array called scores, (2) return the highest score
 /*
 var scores = [55, 99, 44, 88, 89, 67, 94, 51];
@@ -279,7 +279,7 @@ console.log(highestScore(scores));
 
 // Task 9 - Create a function called highestRunScorer that will
 // (1) Receive a 2d(directional) array caled playersInfo, (2) Besed don highest score, return the name of the player
-
+/*
 let playersInfo = [
   ['Mushfiq', 499],
   ['Liton', 459],
@@ -306,3 +306,26 @@ function highestRunScorer(playersInfo) {
 
 const bestPlayer = highestRunScorer(playersInfo);
 console.log(bestPlayer);
+*/
+
+// Object
+
+const student1 = {
+  name: 'Rasel',
+  age: 23,
+  height: 5.8,
+  class: 8,
+  language: ['bangla', 'english']
+}
+
+// constructor (constructor function er nam capital letter diye likha hoy, eti ekti constructor sohojei bojhar jonno)
+function Student(name, age, cgpa, lang) {
+  this.name = name;
+  this.age = age;
+  this.cgpa = cgpa;
+  this.lang = lang;
+}
+const student2 = new Student('Fahim', 20, 4.8, ['bangla', 'english'])
+const student3 = new Student('Anam', 22, 5, ['bangla', 'english', 'hindi', 'portuguise'])
+
+console.log(student3); 
