@@ -309,7 +309,7 @@ console.log(bestPlayer);
 */
 
 // Object
-
+/*
 const student1 = {
   name: 'Rasel',
   age: 23,
@@ -319,6 +319,7 @@ const student1 = {
 }
 
 // constructor (constructor function er nam capital letter diye likha hoy, eti ekti constructor sohojei bojhar jonno)
+
 function Student(name, age, cgpa, lang) {
   this.name = name;
   this.age = age;
@@ -334,3 +335,34 @@ const student3 = new Student('Anam', 22, 5, ['bangla', 'english', 'hindi', 'port
 
 student2.display();
 console.log(student2);
+*/
+
+// Guessing Game
+/*
+let match = 0;
+let clash = 0;
+
+for (let i = 1; i < 6; i++) {
+  let userNumber = parseInt(prompt('Enter any number (5 time) between 1 - 5 :'));
+
+  let randomNum = Math.floor((Math.random() * 5) + 1);
+  console.log(randomNum);
+
+  if (userNumber == randomNum) {
+    match += 1;
+    console.log('You win!');
+
+  } else {
+    clash++;
+    console.log('You did not win!');
+  }
+}
+document.write('You have won:' + match + 'times' + '<br/>');
+document.write('You have lost:' + clash + 'times');
+
+if (match > clash) {
+  document.write('<h2>Hurrah! You Won</h2>');
+} else {
+  document.write('<h2>You Lost!</h2>');
+}
+*/
