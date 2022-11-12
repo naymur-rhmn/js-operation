@@ -366,3 +366,13 @@ if (match > clash) {
   document.write('<h2>You Lost!</h2>');
 }
 */
+
+// date object and date methods
+/*
+let date = new Date();
+console.log(date);
+
+console.log(date.getDate());
+console.log(date.getDay());
+console.log(date.getFullYear());
+*/
