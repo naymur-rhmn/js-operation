@@ -376,3 +376,22 @@ console.log(date.getDate());
 console.log(date.getDay());
 console.log(date.getFullYear());
 */
+
+//  DOM
+/*
+const para = document.getElementById('text');
+para.innerHTML = 'hello i am changed';
+
+const tagName = document.getElementsByTagName('p')[0];
+tagName.innerHTML = 'hei! whats up? i am changed again by Tagname';
+
+const className = document.getElementsByClassName('heading')[0];
+className.innerHTML = 'hello i am come from className';
+
+const querySelect = document.querySelector('li a');
+querySelect.innerHTML = 'query selector';
+
+const querySelectAll = document.querySelectorAll('p')[0];
+console.log(querySelectAll);
+querySelectAll.innerHTML = 'All are beautiful!'
+*/
