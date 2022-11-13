@@ -517,6 +517,7 @@ function removeStyle() {
 */
 
 // event listeners with multiple elements
+/*
 const cosmo = document.querySelector('#cosmo');
 const myBtn = document.querySelectorAll('.btn');
 console.log(myBtn.length);
@@ -527,3 +528,30 @@ for (var i = 0; i < myBtn.length; i++) {
     cosmo.innerHTML = txt + ' number click';
   })
 }
+*/
+
+
+// play audio
+const btn = document.querySelectorAll('.btn');
+let audioo = ['./audio/sample-3s.mp3', './audio/sample-6s.mp3', './audio/ShortChildGiggles PE672605.mp3']
+
+for (var i = 0; i < audioo.length; i++) {
+  btn[i].addEventListener('click', function () {
+
+    let txt = this.innerHTML;
+    switch (txt) {
+      case 'Music 1':
+        var audio = new Audio(audioo[0]);
+        audio.play();
+        break;
+      case 'Music 2':
+        var audio = new Audio(audioo[1]);
+        audio.play();
+        break;
+      case 'Music 3':
+        var audio = new Audio(audioo[2]);
+        audio.play();
+    }
+  })
+}
+
