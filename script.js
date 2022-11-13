@@ -397,7 +397,7 @@ querySelectAll.innerHTML = 'All are beautiful!'
 */
 
 // event handler onclick
-
+/*
 let para = document.querySelector('.txt');
 let img = document.querySelector('#img');
 
@@ -414,3 +414,28 @@ function imgChange() {
 function imgChange1() {
   img.src = './img2.PNG';
 }
+*/
+
+// DOM
+/*
+const headingThree = document.getElementById('heading3');
+headingThree.innerHTML = 'heading three has changed by js';
+headingThree.style.backgroundColor = 'green';
+
+const h4 = document.getElementsByClassName('h4')[0];
+h4.style.color = 'red';
+
+const myDiv = document.querySelector('#my-div');
+myDiv.style.textTransform = 'uppercase';
+
+const para = document.createElement('p');
+const txt = document.createTextNode('hello createTextNode')
+para.appendChild(txt);
+
+// myDiv.appendChild(para);
+
+
+const myHeading1 = document.getElementById('h1')
+const myHeading = document.getElementById('h2')
+myDiv.insertBefore(para, myHeading1)
+*/
