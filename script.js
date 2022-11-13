@@ -444,7 +444,7 @@ myDiv.insertBefore(para, myHeading1)
 
 // DOM traversing & manipulating
 // Downwards, UpWards, Sideways
-
+/*
 // (1) Downwards 
 const parent = document.querySelector('.my-list');
 const child1 = parent.querySelectorAll('li')[1];
@@ -472,4 +472,33 @@ const studentParent = studentB.parentElement;
 studentParent.style.border = '3px solid green'
 const student3 = studentParent.children[2];
 student3.style.border = '2px dashed black'
+*/
 
+
+// image slider
+const imgTag = document.querySelector('img');
+let images = ['./img2.PNG', './img3.jpg', './nr.jpg'];
+
+let counter = 0;
+
+function next() {
+  counter++;
+
+  if (counter >= images.length) {
+    counter = 0;
+    imgTag.src = images[counter]
+  } else {
+    imgTag.src = images[counter]
+  }
+}
+
+
+function prev() {
+  counter--;
+  if (counter < 0) {
+    counter = images.length - 1;
+    imgTag.src = images[counter];
+  } else {
+    imgTag.src = images[counter]
+  }
+}
