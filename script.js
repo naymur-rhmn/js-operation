@@ -445,7 +445,7 @@ myDiv.insertBefore(para, myHeading1)
 // DOM traversing & manipulating
 // Downwards, UpWards, Sideways
 /*
-// (1) Downwards 
+// (1) Downwards
 const parent = document.querySelector('.my-list');
 const child1 = parent.querySelectorAll('li')[1];
 child1.style.color = 'blue'
@@ -476,6 +476,7 @@ student3.style.border = '2px dashed black'
 
 
 // image slider
+/*
 const imgTag = document.querySelector('img');
 let images = ['./img2.PNG', './img3.jpg', './nr.jpg'];
 
@@ -491,8 +492,6 @@ function next() {
     imgTag.src = images[counter]
   }
 }
-
-
 function prev() {
   counter--;
   if (counter < 0) {
@@ -501,4 +500,16 @@ function prev() {
   } else {
     imgTag.src = images[counter]
   }
+}
+*/
+
+// changing css style in js
+const myPara1 = document.getElementById('para1');
+
+function addStyle() {
+  myPara1.classList.add('paragraph');
+}
+
+function removeStyle() {
+  myPara1.classList.remove('paragraph');
 }
