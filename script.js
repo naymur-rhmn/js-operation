@@ -539,19 +539,22 @@ for (var i = 0; i < audioo.length; i++) {
   btn[i].addEventListener('click', function () {
 
     let txt = this.innerHTML;
-    switch (txt) {
-      case 'Music 1':
-        var audio = new Audio(audioo[0]);
-        audio.play();
-        break;
-      case 'Music 2':
-        var audio = new Audio(audioo[1]);
-        audio.play();
-        break;
-      case 'Music 3':
-        var audio = new Audio(audioo[2]);
-        audio.play();
-    }
+    audioPlay(txt);
   })
 }
 
+function audioPlay(txt) {
+  switch (txt) {
+    case 'Music 1':
+      var audio = new Audio(audioo[0]);
+      audio.play();
+      break;
+    case 'Music 2':
+      var audio = new Audio(audioo[1]);
+      audio.play();
+      break;
+    case 'Music 3':
+      var audio = new Audio(audioo[2]);
+      audio.play();
+  }
+}
