@@ -439,3 +439,37 @@ const myHeading1 = document.getElementById('h1')
 const myHeading = document.getElementById('h2')
 myDiv.insertBefore(para, myHeading1)
 */
+
+
+
+// DOM traversing & manipulating
+// Downwards, UpWards, Sideways
+
+// (1) Downwards 
+const parent = document.querySelector('.my-list');
+const child1 = parent.querySelectorAll('li')[1];
+child1.style.color = 'blue'
+// Downwards children
+const child3 = parent.children[2];
+child3.style.textTransform = 'capitalize'
+
+
+
+// (2) Upwards
+const studentA = document.querySelector('.student-a');
+const studentList = studentA.parentElement;
+studentList.style.backgroundColor = 'red';
+
+
+// (3) Sideways
+const studentB = document.querySelector('.student-b');
+const studentC = studentB.nextElementSibling;
+const studenta = studentB.previousElementSibling;
+studentC.style.color = 'white'
+studenta.style.textTransform = 'uppercase'
+
+const studentParent = studentB.parentElement;
+studentParent.style.border = '3px solid green'
+const student3 = studentParent.children[2];
+student3.style.border = '2px dashed black'
+
