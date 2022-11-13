@@ -504,6 +504,7 @@ function prev() {
 */
 
 // changing css style in js
+/*
 const myPara1 = document.getElementById('para1');
 
 function addStyle() {
@@ -512,4 +513,17 @@ function addStyle() {
 
 function removeStyle() {
   myPara1.classList.remove('paragraph');
+}
+*/
+
+// event listeners with multiple elements
+const cosmo = document.querySelector('#cosmo');
+const myBtn = document.querySelectorAll('.btn');
+console.log(myBtn.length);
+
+for (var i = 0; i < myBtn.length; i++) {
+  myBtn[i].addEventListener('click', function () {
+    let txt = this.innerHTML;
+    cosmo.innerHTML = txt + ' number click';
+  })
 }
