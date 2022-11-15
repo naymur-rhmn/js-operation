@@ -532,6 +532,7 @@ for (var i = 0; i < myBtn.length; i++) {
 
 
 // play audio
+/*
 const btn = document.querySelectorAll('.btn');
 let audioo = ['./audio/sample-3s.mp3', './audio/sample-6s.mp3', './audio/ShortChildGiggles PE672605.mp3']
 
@@ -558,3 +559,44 @@ function audioPlay(txt) {
       audio.play();
   }
 }
+*/
+
+// addEventListener (change)
+/*
+const name = document.querySelector('#name');
+name.addEventListener('change', function (e) {
+  console.log(e.target.value);
+})
+*/
+/*
+const programs = document.querySelectorAll('input');
+let inputArr = Array.from(programs);
+
+inputArr.map(program => {
+  program.addEventListener('change', programHangler)
+})
+
+function programHangler(e) {
+  if (e.target.checked) {
+    console.log(e.target.value);
+  }
+}
+*/
+/*
+const lang = document.querySelector('#lang');
+console.log(lang);
+
+lang.addEventListener('change', function (e) {
+  console.log(e.target.value);
+})
+*/
+
+
+
+
+
+
+// =================================== My Daily Task ====================================
+// ==============================Solve (1) Javascript problem============================
+
+// problem: Write a function that tests if a number, n, is a prime number.
