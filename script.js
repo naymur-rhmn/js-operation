@@ -615,9 +615,9 @@ function displayTime() {
     seassion = "PM";
   }
   // add prefix 0 for < 10
-  sec = sec < 10 ? '0' + sec : sec;
-  mnt = mnt < 10 ? '0' + mnt : mnt;
-  hrs = hrs < 10 ? '0' + hrs : hrs;
+  sec = formatTime(sec);
+  mnt = formatTime(mnt);
+  hrs = formatTime(hrs);
 
   // set time to html
   let clock = document.querySelector('.clock')
@@ -626,5 +626,10 @@ function displayTime() {
   clock.querySelector('.seconds').innerHTML = sec;
   clock.querySelector('.ampm').innerHTML = seassion;
 }
-
+function formatTime(value) {
+  if (value < 10) {
+    value = "0" + value;
+  }
+  return value;
+}
 setInterval(displayTime, 500)
