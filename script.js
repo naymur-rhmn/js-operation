@@ -590,13 +590,41 @@ lang.addEventListener('change', function (e) {
   console.log(e.target.value);
 })
 */
+// const input = document.querySelector('input');
+// input.addEventListener('copy', function (e) {
+//   console.log('Text copied');
+// })
 
+// Bom (Browser Object Model)
 
+// make a clock
+function displayTime() {
+  let time = new Date();
+  let hrs = time.getHours();
+  let mnt = time.getMinutes();
+  let sec = time.getSeconds();
+  let seassion;
 
+  // set 12 hour format
+  if (hrs > 12) {
+    hrs = hrs - 12
+  }
+  if (hrs >= 12) {
+    seassion = 'AM';
+  } else {
+    seassion = "PM";
+  }
+  // add prefix 0 for < 10
+  sec = sec < 10 ? '0' + sec : sec;
+  mnt = mnt < 10 ? '0' + mnt : mnt;
+  hrs = hrs < 10 ? '0' + hrs : hrs;
 
+  // set time to html
+  let clock = document.querySelector('.clock')
+  clock.querySelector('.hour').innerHTML = hrs;
+  clock.querySelector('.minutes').innerHTML = mnt;
+  clock.querySelector('.seconds').innerHTML = sec;
+  clock.querySelector('.ampm').innerHTML = seassion;
+}
 
-
-// =================================== My Daily Task ====================================
-// ==============================Solve (1) Javascript problem============================
-
-// problem: Write a function that tests if a number, n, is a prime number.
+setInterval(displayTime, 500)
