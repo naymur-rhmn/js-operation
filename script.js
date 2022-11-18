@@ -1,6 +1,6 @@
 /*
-var num1 = prompt('Enter first Number : ');
-var num2 = prompt('Enter Second Number : ');
+var num1 = prompt('Enter first num1er : ');
+var num2 = prompt('Enter Second num1er : ');
 
 num1 = parseInt(num1, 10);
 num2 = parseInt(num2, 10);
@@ -98,7 +98,7 @@ switch (letter) {
 }
 */
 
-// Task 6 - write a program  that will print sum of all the numbers  that are divisible by 3 and 5 from 1-100
+// Task 6 - write a program  that will print sum of all the num1ers  that are divisible by 3 and 5 from 1-100
 /*
 var i = 1;
 var sum = 0;
@@ -130,29 +130,29 @@ for (var i = 1; i <= 50; i++) {
     continue;
   }
   evenNum = i;
-  document.write('Even Number : ' + evenNum + '<br/>');
+  document.write('Even num1er : ' + evenNum + '<br/>');
 }
 */
 
 // ternary operator
 /*
-var number = Number(prompt('Enter a number : '));
-// var result = number < 0 ? 'Negative' : 'Positive';
-var result = number > 0 ? 'Positive' : number < 0 ? 'Negative' : 'Zero';
+var num1er = num1er(prompt('Enter a num1er : '));
+// var result = num1er < 0 ? 'Negative' : 'Positive';
+var result = num1er > 0 ? 'Positive' : num1er < 0 ? 'Negative' : 'Zero';
 
 document.write(result);
 */
 
 // traditional function
 /*
-var number = Number(prompt('Enter any number to square : '))
+var num1er = num1er(prompt('Enter any num1er to square : '))
 
 function square(param) {
   var result = param * param;
   return result;
 }
 
-var x = square(number);
+var x = square(num1er);
 document.write(x);
 */
 
@@ -251,7 +251,7 @@ names.sort()
 names.reverse()
 
 
-// number sort in an array
+// num1er sort in an array
 var num = [3, 1, 22, 12, 9, 7, 30, 21]
 num.sort(function (a, b) {
   // a - b coto theke boro songkha dekhabe, b - a boro theke coto songkha dekhabe (smile)
@@ -343,12 +343,12 @@ let match = 0;
 let clash = 0;
 
 for (let i = 1; i < 6; i++) {
-  let userNumber = parseInt(prompt('Enter any number (5 time) between 1 - 5 :'));
+  let usernum1er = parseInt(prompt('Enter any num1er (5 time) between 1 - 5 :'));
 
   let randomNum = Math.floor((Math.random() * 5) + 1);
   console.log(randomNum);
 
-  if (userNumber == randomNum) {
+  if (usernum1er == randomNum) {
     match += 1;
     console.log('You win!');
 
@@ -401,10 +401,10 @@ querySelectAll.innerHTML = 'All are beautiful!'
 let para = document.querySelector('.txt');
 let img = document.querySelector('#img');
 
-function btnAlert() {
+function numAlert() {
   para.innerHTML = 'Button 1 clicked'
 }
-function btnAlert1() {
+function numAlert1() {
   para.innerHTML = 'Button 2 clicked'
 }
 
@@ -519,13 +519,13 @@ function removeStyle() {
 // event listeners with multiple elements
 /*
 const cosmo = document.querySelector('#cosmo');
-const myBtn = document.querySelectorAll('.btn');
-console.log(myBtn.length);
+const mynum = document.querySelectorAll('.num');
+console.log(mynum.length);
 
-for (var i = 0; i < myBtn.length; i++) {
-  myBtn[i].addEventListener('click', function () {
+for (var i = 0; i < mynum.length; i++) {
+  mynum[i].addEventListener('click', function () {
     let txt = this.innerHTML;
-    cosmo.innerHTML = txt + ' number click';
+    cosmo.innerHTML = txt + ' num1er click';
   })
 }
 */
@@ -533,11 +533,11 @@ for (var i = 0; i < myBtn.length; i++) {
 
 // play audio
 /*
-const btn = document.querySelectorAll('.btn');
+const num = document.querySelectorAll('.num');
 let audioo = ['./audio/sample-3s.mp3', './audio/sample-6s.mp3', './audio/ShortChildGiggles PE672605.mp3']
 
 for (var i = 0; i < audioo.length; i++) {
-  btn[i].addEventListener('click', function () {
+  num[i].addEventListener('click', function () {
 
     let txt = this.innerHTML;
     audioPlay(txt);
@@ -596,7 +596,7 @@ lang.addEventListener('change', function (e) {
 // })
 
 // Bom (Browser Object Model)
-
+/*
 // make a clock
 function displayTime() {
   let time = new Date();
@@ -620,11 +620,9 @@ function displayTime() {
   hrs = formatTime(hrs);
 
   // set time to html
-  let clock = document.querySelector('.clock')
-  clock.querySelector('.hour').innerHTML = hrs;
-  clock.querySelector('.minutes').innerHTML = mnt;
-  clock.querySelector('.seconds').innerHTML = sec;
-  clock.querySelector('.ampm').innerHTML = seassion;
+  let txt = hrs + ":" + mnt + ":" + sec + " " + seassion;
+  document.querySelector('.clock').innerHTML = txt
+
 }
 function formatTime(value) {
   if (value < 10) {
@@ -633,3 +631,8 @@ function formatTime(value) {
   return value;
 }
 setInterval(displayTime, 500)
+*/
+
+// make a calculator
+const input = document.querySelector('.calc-display input');
+const calcnum = document.querySelectorAll('.num');
