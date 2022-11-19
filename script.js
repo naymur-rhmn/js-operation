@@ -634,5 +634,26 @@ setInterval(displayTime, 500)
 */
 
 // make a calculator
-const input = document.querySelector('.calc-display input');
-const calcnum = document.querySelectorAll('.num');
+
+
+// Error handling (try catch finally through)
+const userInput = document.getElementById('user-num');
+const checkBtn = document.getElementById('check');
+checkBtn.addEventListener('click', () => {
+
+  try {
+    if (userInput.value < 5) {
+      throw 'The number is less than 5.'
+    }
+    else if (userInput.value > 10) {
+      throw 'The number is greater than 10.'
+    }
+    else {
+      console.log(userInput.value);
+    }
+    userInput.value = ''
+  } catch (err) {// if try block get an error, that error catch in this block
+    console.log(err);
+  } finally { //finally is not mendatory to use everytime. used for your purposes
+  }
+})
