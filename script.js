@@ -636,9 +636,13 @@ setInterval(displayTime, 500)
 // make a calculator
 
 
-// Error handling (try catch finally through)
+// Error handling (try catch finally throw)
+/*
 const userInput = document.getElementById('user-num');
 const checkBtn = document.getElementById('check');
+const warn = document.getElementById('warning');
+
+let warning = '';
 checkBtn.addEventListener('click', () => {
 
   try {
@@ -651,9 +655,26 @@ checkBtn.addEventListener('click', () => {
     else {
       console.log(userInput.value);
     }
-    userInput.value = ''
   } catch (err) {// if try block get an error, that error catch in this block
-    console.log(err);
+    warning = err;
   } finally { //finally is not mendatory to use everytime. used for your purposes
+    warn.innerHTML = warning;
+    userInput.value = ''
   }
 })
+*/
+
+// default and rest parameter
+// function er prameter variable er dafault value assign korake dafault parameter bole.function call korar somoy argument value pass kole default value kaj korbe na, jodi argument value pass na kora hoy kebol tokhon kaj korbe default parameter.
+// 
+function test(num = 5) {
+  console.log(num);
+}
+test(4);
+// 3 dot er sathe jekono variable name eksathe function parameter dawake (...rest) rest parameter bole. function parameter theke odhik songkhok function argument hole seguloke eksathe recieve kore rest parameter.
+function test1(n1, n2, ...rest) {
+  console.log(n1, n2);
+  console.log(...rest);
+  console.log(n1, n2, ...rest);
+}
+test1('first', 'second', '3rdRest', '4thRest', '5thRest', '6thRest')
