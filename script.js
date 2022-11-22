@@ -667,7 +667,7 @@ checkBtn.addEventListener('click', () => {
 // default and rest parameter
 /*
 // function er prameter variable er dafault value assign korake dafault parameter bole.function call korar somoy argument value pass kole default value kaj korbe na, jodi argument value pass na kora hoy kebol tokhon kaj korbe default parameter.
-// 
+//
 function test(num = 5) {
   console.log(num);
 }
@@ -683,7 +683,7 @@ test1('first', 'second', '3rdRest', '4thRest', '5thRest', '6thRest')
 
 // spread operator
 // spread operator hocche es6 er notun songskoron. spread operator dara copy kora hoy. ei operator 3dot(...) diye likha hoy
-
+/*
 const arr1 = [1, 2, 3, 4, 5, 6];
 const arr2 = [7, 8, 9, 10];
 
@@ -702,3 +702,18 @@ const obj2 = {
 const newObj = { ...obj1, ...obj2 }
 
 console.log(newObj);
+*/
+
+// object literals
+let obj = {
+  work: 'self',
+  /*
+  name: function () {
+    console.log('object Working');
+  }*/
+  name() {
+    console.log('object Working');
+  }
+}
+console.log(obj);
+console.log(obj.name());
