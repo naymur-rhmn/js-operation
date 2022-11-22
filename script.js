@@ -708,7 +708,7 @@ console.log(newObj);
 /*
 let obj = {
   work: 'self',
-  
+
  // name: function () {console.log('object Working');}
   name() {
     console.log('object Working');
@@ -719,17 +719,20 @@ console.log(obj.name());
 */
 
 // for of loop
+/*
 const myString = 'Bangladesh';
-// for (let letter of myString) {
-//   console.log(`Sequence Letter of Bangladesh: ${letter}`);
-// }
+for (let letter of myString) {
+  console.log(`Sequence Letter of Bangladesh: ${letter}`);
+}
 
-// for (let i = 0; i < myString.length; i++) {
-//   let x = myString[i];
-//   console.log(`Letter of Bangladesh: ${x}`);
-// }
+for (let i = 0; i < myString.length; i++) {
+  let x = myString[i];
+  console.log(`Letter of Bangladesh: ${x}`);
+}
+*/
 
 // for in loop
+/*
 let obj = {
   name: 'rasel',
   age: 22
@@ -739,3 +742,13 @@ console.log(obj.name);
 for (let x in obj) {
   console.log(obj[x]);
 }
+*/
+
+// forEach method
+// forEach function takes 3 arguments: (1) the item value; (2) the item index; (3) the array itself;
+const numbers = [10, 20, 30, 40, 50, 60];
+numbers.forEach(function (num, index, arr) {
+  arr[index] = num + 2;
+  console.log(num);
+})
+console.log(numbers);
