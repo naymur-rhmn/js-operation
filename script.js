@@ -746,9 +746,20 @@ for (let x in obj) {
 
 // forEach method
 // forEach function takes 3 arguments: (1) the item value; (2) the item index; (3) the array itself;
+/*
 const numbers = [10, 20, 30, 40, 50, 60];
 numbers.forEach(function (num, index, arr) {
   arr[index] = num + 2;
   console.log(num);
 })
 console.log(numbers);
+*/
+
+// map() returns value a new array
+const numbers = [2, 4, 6, 8, 10];
+const newNum = numbers.map(function (n, index, arr) {
+  return n * n
+})
+const n = numbers.map(Math.sqrt)
+console.log(n);
+console.log(newNum);
