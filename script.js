@@ -756,6 +756,7 @@ console.log(numbers);
 */
 
 // map() returns value a new array
+/*
 const numbers = [2, 4, 6, 8, 10];
 const newNum = numbers.map(function (n, index, arr) {
   return n * n
@@ -763,3 +764,11 @@ const newNum = numbers.map(function (n, index, arr) {
 const n = numbers.map(Math.sqrt)
 console.log(n);
 console.log(newNum);
+*/
+
+// filter() method 
+const ages = [20, 18, 15, 33, 22, 36];
+const newAges = ages.filter(function (a) {
+  return a > 20;
+});
+console.log(newAges);
