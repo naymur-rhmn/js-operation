@@ -766,9 +766,39 @@ console.log(n);
 console.log(newNum);
 */
 
-// filter() method 
+// filter() method return a new array that pass the condition
+/*
 const ages = [20, 18, 15, 33, 22, 36];
 const newAges = ages.filter(function (a) {
   return a > 20;
 });
 console.log(newAges);
+*/
+
+// aroow function
+// emon student er nam dekhao jader gpa 3.00 er opore
+const sutdents = [
+  {
+    name: 'anis',
+    gpa: 2.9
+  },
+  {
+    name: 'rohim',
+    gpa: 3.2
+  },
+  {
+    name: 'korim',
+    gpa: 2.0
+  },
+  {
+    name: 'jamal',
+    gpa: 3.9
+  },
+]
+
+sutdents.filter((student) => student.gpa > 3.0).map((st) => console.log(st.name));
+
+const myFunction = () => {
+  console.log('This is an arrow function');
+}
+myFunction();
