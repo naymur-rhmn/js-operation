@@ -705,15 +705,37 @@ console.log(newObj);
 */
 
 // object literals
+/*
 let obj = {
   work: 'self',
-  /*
-  name: function () {
-    console.log('object Working');
-  }*/
+  
+ // name: function () {console.log('object Working');}
   name() {
     console.log('object Working');
   }
 }
 console.log(obj);
 console.log(obj.name());
+*/
+
+// for of loop
+const myString = 'Bangladesh';
+// for (let letter of myString) {
+//   console.log(`Sequence Letter of Bangladesh: ${letter}`);
+// }
+
+// for (let i = 0; i < myString.length; i++) {
+//   let x = myString[i];
+//   console.log(`Letter of Bangladesh: ${x}`);
+// }
+
+// for in loop
+let obj = {
+  name: 'rasel',
+  age: 22
+}
+console.log(obj.name);
+
+for (let x in obj) {
+  console.log(obj[x]);
+}
