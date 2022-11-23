@@ -806,6 +806,7 @@ myFunction();
 */
 
 // destructure
+/*
 // array destructure
 const num = [1, 3, 5, 6, 7, 8, 9];
 const [n1, n2, ...z] = num;
@@ -819,6 +820,24 @@ const obj = {
   age: 28,
   id: 1
 }
-console.log(obj.name);
 const { name, age, id } = obj;
 console.log(name);
+*/
+
+// array methods | find() | findIndex()
+//The find() method returns the value of the first element that passes a test
+const ages = [13, 7, 9, 22, 21, 35, 34, 12]
+console.log(ages.find(x => x > 21));
+// findIndex() return index number from array.
+console.log(ages.findIndex(x => x > 21));
+
+// string methods | startsWith() | endsWith() | includes 
+// this methods return boolean 
+const message = 'I am a new javascript developer';
+console.log(message.startsWith('I')); // check the first index default, it is also case sensitive
+console.log(message.startsWith('a', 2)); // check the targeted index customly
+console.log(message.endsWith('new'));
+
+// includes()
+const myArr = ['Banana', 'apple', 'mango']
+console.log(myArr.includes('Mango'));
