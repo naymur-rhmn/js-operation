@@ -704,7 +704,7 @@ const newObj = { ...obj1, ...obj2 }
 console.log(newObj);
 */
 
-// object literals
+//  erals
 /*
 let obj = {
   work: 'self',
@@ -777,6 +777,7 @@ console.log(newAges);
 
 // aroow function
 // emon student er nam dekhao jader gpa 3.00 er opore
+/*
 const sutdents = [
   {
     name: 'anis',
@@ -802,3 +803,22 @@ const myFunction = () => {
   console.log('This is an arrow function');
 }
 myFunction();
+*/
+
+// destructure
+// array destructure
+const num = [1, 3, 5, 6, 7, 8, 9];
+const [n1, n2, ...z] = num;
+
+const [a1, a2, a3] = z;
+console.log(a1);
+console.log(n1, n2, z);
+// object destructure
+const obj = {
+  name: 'Tarek',
+  age: 28,
+  id: 1
+}
+console.log(obj.name);
+const { name, age, id } = obj;
+console.log(name);
