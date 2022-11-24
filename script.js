@@ -845,6 +845,7 @@ console.log(myArr.includes('mango'));
 */
 
 // class
+/*
 class Student {
   constructor(id, name) {
     this.id = id;
@@ -862,3 +863,26 @@ function Pen(name, color, price) {
 
 const pen1 = new Pen("Marker", "Blue", "$3");
 console.log(pen1);
+*/
+
+// callback and higher order function
+// jokhon ekti function argument hisebe arekti function ney tokhon take heigher order function boole.
+// je function ke onno ekti function er argument hisebe pass kora hoy take callback function bole.Othoba bola jay heigher order function e je function parameter hisebe pass kora hoy take callback function bole.
+const myArr = [1, 2, 5, 8, 4, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19];
+
+const filteredNumber = (arr, func) => {
+  const filteredArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    func(arr[i]) ? filteredArr.push(arr[i]) : null;
+  }
+}
+
+const isOdd = (x) => {
+  return x % 2 != 0;
+}
+const isEven = (x) => {
+  return x % 2 === 0;
+}
+
+filteredNumber(myArr, isOdd);
+filteredNumber(myArr, isEven);
