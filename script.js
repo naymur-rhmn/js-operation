@@ -825,6 +825,7 @@ console.log(name);
 */
 
 // array methods | find() | findIndex()
+/*
 //The find() method returns the value of the first element that passes a test
 const ages = [13, 7, 9, 22, 21, 35, 34, 12]
 console.log(ages.find(x => x > 21));
@@ -838,6 +839,26 @@ console.log(message.startsWith('I')); // check the first index default, it is al
 console.log(message.startsWith('a', 2)); // check the targeted index customly
 console.log(message.endsWith('new'));
 
-// includes()
+// includes() 
 const myArr = ['Banana', 'apple', 'mango']
-console.log(myArr.includes('Mango'));
+console.log(myArr.includes('mango'));
+*/
+
+// class
+class Student {
+  constructor(id, name) {
+    this.id = id;
+    this.name = name;
+  }
+}
+const obj = new Student(11, 'Anis')
+console.log(obj);
+
+function Pen(name, color, price) {
+  this.name = name;
+  this.color = color;
+  this.price = price;
+}
+
+const pen1 = new Pen("Marker", "Blue", "$3");
+console.log(pen1);
