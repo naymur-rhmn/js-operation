@@ -891,7 +891,7 @@ filteredNumber(myArr, isEven);
 
 
 // calling API using Axios
-
+/*
 const handleApi = async (config) => {
   return await axios(config);
 }
@@ -939,8 +939,38 @@ const deleteData = () => {
     .catch(err => console.log(err))
 }
 deleteData()
-
-
 getData(createData(updateData()));
+*/
+
+
+// localStorage | sessionStorage 
+// localStorage
+const students = ['Anowar', 'Mezbah', 'Sopon']
+localStorage.setItem('userName', 'Arman')
+localStorage.setItem('password', 'pass123')
+localStorage.setItem('user', JSON.stringify(students))
+
+console.log(localStorage.getItem('password'));
+
+const user = JSON.parse(localStorage.getItem('user'));
+console.log(user);
+
+const removeitem = localStorage.removeItem('userName')
+// localStorage.clear(); for clear all data
+
+// sessionStorage
+const obj = { name: 'RAna', age: 22, student: true }
+sessionStorage.setItem('user', 'Rabbi');
+sessionStorage.setItem('bloodGroup', 'A+');
+sessionStorage.setItem('userInfo', JSON.stringify(obj));
+
+sessionStorage.getItem('user');
+const userInfo = JSON.parse(sessionStorage.getItem('userInfo'));
+console.log(userInfo);
+
+sessionStorage.removeItem('user')
+// sessionStorage.clear(); for clear all data
+
+
 
 // see 79 no video that is serial no 78. practice it
