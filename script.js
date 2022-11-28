@@ -832,14 +832,14 @@ console.log(ages.find(x => x > 21));
 // findIndex() return index number from array.
 console.log(ages.findIndex(x => x > 21));
 
-// string methods | startsWith() | endsWith() | includes 
-// this methods return boolean 
+// string methods | startsWith() | endsWith() | includes
+// this methods return boolean
 const message = 'I am a new javascript developer';
 console.log(message.startsWith('I')); // check the first index default, it is also case sensitive
 console.log(message.startsWith('a', 2)); // check the targeted index customly
 console.log(message.endsWith('new'));
 
-// includes() 
+// includes()
 const myArr = ['Banana', 'apple', 'mango']
 console.log(myArr.includes('mango'));
 */
@@ -868,6 +868,7 @@ console.log(pen1);
 // callback and higher order function
 // jokhon ekti function argument hisebe arekti function ney tokhon take heigher order function boole.
 // je function ke onno ekti function er argument hisebe pass kora hoy take callback function bole.Othoba bola jay heigher order function e je function parameter hisebe pass kora hoy take callback function bole.
+/*
 const myArr = [1, 2, 5, 8, 4, 9, 11, 12, 13, 14, 15, 16, 17, 18, 19];
 
 const filteredNumber = (arr, func) => {
@@ -886,3 +887,60 @@ const isEven = (x) => {
 
 filteredNumber(myArr, isOdd);
 filteredNumber(myArr, isEven);
+*/
+
+
+// calling API using Axios
+
+const handleApi = async (config) => {
+  return await axios(config);
+}
+
+const getData = () => {
+  handleApi('https://jsonplaceholder.typicode.com/posts')
+    .then(res => console.log(res.data))
+    .catch(err => console.log(err))
+
+
+}
+
+const createData = () => {
+  handleApi({
+    url: 'https://jsonplaceholder.typicode.com/posts',
+    method: 'POST',
+    data: JSON.stringify({
+      title: 'foommma',
+      body: 'bar',
+      userId: 1,
+    })
+  }).then(res => console.log(res.data))
+    .catch(err => console.log(err))
+}
+
+const updateData = () => {
+  handleApi({
+    url: 'https://jsonplaceholder.typicode.com/posts/1',
+    method: 'PUT',
+    data: JSON.stringify({
+      title: 'changed',
+      body: 'bar',
+      userId: 1,
+      id: 1
+    })
+  })
+    .then(res => console.log(res.data))
+    .catch(err => console.log(err))
+}
+const deleteData = () => {
+  handleApi({
+    url: 'https://jsonplaceholder.typicode.com/posts/1',
+    method: 'DELETE'
+  }).then(res => console.log(res))
+    .catch(err => console.log(err))
+}
+deleteData()
+
+
+getData(createData(updateData()));
+
+// see 79 no video that is serial no 78. practice it
